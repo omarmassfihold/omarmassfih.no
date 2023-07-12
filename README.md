@@ -1,7 +1,5 @@
 # omarmassfih.no
 
-Beklager for gjentagelsen. Her er prosjektbeskrivelsen i første person:
-
 Dette prosjektet er min personlige nettside. Hensikten med nettsiden er å presentere mitt arbeid og mine prosjekter. Nettsiden er bygget ved hjelp av HTML og CSS, og den inneholder ulike seksjoner og elementer. Øverst på nettsiden finner du en navigasjonsmeny som inneholder lenker til forskjellige deler av nettsiden, inkludert en side dedikert til mine prosjekter og en side som gir informasjon om meg.
 
 Videre finner du en seksjon som gir en kort introduksjon om meg, inkludert mitt navn og en beskrivelse av min bakgrunn som informatikk- og programmeringsstudent fra Oslo, Norge.
