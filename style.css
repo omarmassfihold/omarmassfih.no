@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* font-family: 'Abel', sans-serif; */
+  font-family: monospace, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #d0d5df;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+*::selection {
+  background-color: orange;
+  color: #1c1e24;
+}
+
+body {
+  background-color: #282c34;
+}
+
+
+/* Rader */
+
+.row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* margin: 0 2vw; */
+  padding: 25px 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row1 {
+  background-color: #1c1e24;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  margin-bottom: 3vw;
+}
+
+.row2 {
+  padding-bottom: 1vw;
+}
+
+.row3 {
+  padding-top: 0;
+}
+
+.row4 {
+  margin-top: 1vw;
+}
+
+
+/* Kollonner */
+
+[class*="col-"] {
+  float: left;
+  /* padding: 10px 10px 10px 10px; */
+}
+
+.col-1 {
+  width: 50%;
+}
+
+.col-2 {
+  width: 100%;
+}
+
+/* Celler */
+
+.item1 {
+  display: flex;
+  justify-content: start;
+  padding: 0;
+}
+
+.item1>a {
+  font-weight: 600;
+  padding: 0;
+  color: white;
+}
+
+.item2 {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.item2>a {
+  padding: 0;
+}
+
+.item3>h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* text-align: center; */
+  color: white;
+  margin-bottom: 3vw;
+}
+
+.item3>h1>a {
+  font-size: 1.5rem;
+}
+
+/* .item3>p {
+  font-size: 0.9rem;
+  text-align: center;
+} */
+
+p>br {
+  display: none;
+}
+
+.item4 {
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+}
+
+.item4 a:link {
+  padding: 0;
+}
+
+.item4>a>svg {
+  fill: #949598;
+  height: 40px;
+  width: 40px;
+}
+
+.item4>a>svg:hover {
+  fill: #d0d5df;
+  fill-opacity: 1;
+}
+
+.item5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 5px 2% 0 2%; */
+  padding: 0;
+  /* padding-left: 5px; */
+  margin-bottom: 0.5vw;
+  border-bottom: 1px solid #c2c4c84c;
+}
+
+.item5>h2 {
+  font-weight: 600;
+}
+
+.item5>* {
+  color: white;
+}
+
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0;
+}
+
+.project>.kilde {
+  color: #969799;
+}
+
+.projectname {
+  padding: 0;
+}
+
+/* Lenker */
+
+a:link {
+  color: #d0d5df;
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: #282c34;
+  color: white;
+  border-radius: 5px;
+}
+
+a:active {
+  color: #d0d5df;
+}
+
+/* Lenker i body */
+
+a.linkbody {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  font-weight: 600;
+  padding: 0;
+  border-radius: 0;
+}
+
+.linkbody:hover {
+  color: black;
+  background-color: orange;
+}
+
+
+/* Prosjekt lenke */
+
+.project:hover {
+  background-color: #1c1e24;
+}
+
+.project:hover>.projectname {
+  color: white;
+  border-radius: 5px;
+}
+
+
+/* Når skjermen er max 310px*/
+
+@media only screen and (max-width: 310px) {
+  * {
+    text-align: center;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .item1 {
+    justify-content: center;
+  }
+
+  .item2 {
+    justify-content: center;
+  }
+
+  .item4 {
+    justify-content: center;
+  }
+
+  .item5 {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+}
+
+/* Når skjermen er minst 745px*/
+
+@media only screen and (min-width: 871px) {
+  .row {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .item3>h1,
+  .item3>h1>a {
+    font-size: 2rem;
+  }
+
+  .item4 {
+    justify-content: left;
+  }
+
+  p>br {
+    display: block;
+  }
+
+  .item5>h2 {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+  * {
+    font-size: 17px;
+  }
+
+  .row {
+    padding-left: 25vw;
+    padding-right: 25vw;
+  }
+
+}
+
+@media only screen and (min-width: 2560px) {
+  * {
+    font-size: 20px;
+  }
+}

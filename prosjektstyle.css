@@ -1,0 +1,60 @@
+h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.col-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1e24;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.col-3 > * {
+    padding: 5px 0;
+}
+
+.col-3 > p {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1vw;
+}
+
+/* Lenker */
+
+.col-3 > nav > a:link {
+    gap: 10px;
+    color: white;
+    background-color: #282c34;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c2c4c84c;
+    align-items: end;
+}
+
+.col-3 > nav > a:hover {
+    border-color: orange;
+    color: orange;
+}
+
+@media only screen and (max-width: 700px){
+    .projects {
+        flex-direction: column;
+    }
+}
