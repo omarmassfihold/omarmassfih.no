@@ -6,6 +6,10 @@ h1 {
     padding-bottom: 20px;
 }
 
+h2 {
+    font-size: 1.2rem;
+}
+
 .col-3 {
     flex: 1;
     display: flex;
@@ -21,10 +25,6 @@ h1 {
 
 .col-3 > p {
     margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.2rem;
 }
 
 .projects {
@@ -52,6 +52,8 @@ h2 {
     border-color: orange;
     color: orange;
 }
+
+/* Når skjermen er max 700px*/
 
 @media only screen and (max-width: 700px){
     .projects {
