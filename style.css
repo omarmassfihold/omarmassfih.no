@@ -26,7 +26,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   /* margin: 0 2vw; */
-  padding: 25px 20px;
+  padding: 25px 5px;
 }
 
 .row::after {
@@ -37,8 +37,8 @@ body {
 
 .row1 {
   background-color: #1c1e24;
-  padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
+  padding-top: 1.25vw;
+  padding-bottom: 1.25vw;
   margin-bottom: 3vw;
 }
 
@@ -102,28 +102,16 @@ body {
   padding: 0;
 }
 
-/* 
-.item3 {
-  padding: 0;
-}
-*/
-
 .item3>h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  /* text-align: center; */
   color: white;
-  margin-bottom: 3vw;
+  margin-bottom: 0.75rem;
 }
 
 .item3>h1>a {
   font-size: 1.5rem;
 }
-
-/* .item3>p {
-  font-size: 0.9rem;
-  text-align: center;
-} */
 
 p>br {
   display: none;
@@ -134,6 +122,7 @@ p>br {
   justify-content: start;
   gap: 5px;
   padding: 0;
+  padding-left: 2px;
 }
 
 .item4 a:link {
@@ -174,7 +163,6 @@ p>br {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1px 0;
 }
 
 .project>.kilde {
@@ -264,6 +252,19 @@ a.linkbody {
   }
 }
 
+@media only screen and (min-width: 603px) {
+  p>br {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .row {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
 /* Når skjermen er minst 871px*/
 
 @media only screen and (min-width: 871px) {
@@ -301,12 +302,22 @@ a.linkbody {
     padding-left: 25vw;
     padding-right: 25vw;
   }
+
+  .item4>a>svg {
+    height: 3vw;
+    width: 3vw;
+  }
 }
 
-/* Når skjermen er minst 871px*/
+/* Når skjermen er minst 2560px*/
 
 @media only screen and (min-width: 2560px) {
   * {
-    font-size: 20px;
+    font-size: 26px;
+  }
+
+  .row {
+    padding-left: 30vw;
+    padding-right: 30vw;
   }
 }

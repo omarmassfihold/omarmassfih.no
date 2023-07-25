@@ -27,6 +27,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+section {
+    padding-top: 25px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
